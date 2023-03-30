@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+	font-family:'n4';
+	src: url('../plugin/font/normal/n4.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s6';
+	src: url('../plugin/font/sambung/s6.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s7';
+	src: url('../plugin/font/sambung/s7.ttf') format('truetype');
+}
+ .font_s1 {
+    font-family: s7;
+    text-shadow: 1px 1px 2px var(--teks);
+} .font_s6 {
+    font-family: s6;
+    font-size: 3rem;
+} .absensi {
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0 5px;
+    color:white;
+    background-color:var(--tombol);
+} 
+.love-story hr {
+    display: none;
+    width: 10px;
+    background-color: var(--teks);
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+} .note {
+    width: 18rem;
+    background-color:var(--background2);
+    color:black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 3px 3px 3px var(--tombol);
+} .note::before {
+    content: '❤️';
+    color:white;
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    left: -35px;
+    text-align: center; 
+    background-color: var(--teks2);
+    border-radius: 50px;
+} .notes {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 30px;
+} .story-img {
+    width: 100%;
+} .hilang {
+    opacity: 0;
+    transform: translate(0, 30px);
+    transition: all 500ms ease 0s;
+} .hilang.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+
+:root {
+    --background1: #eeebdf; 
+    --background2: #d3d0c6;
+    --tombol: #a7a291;
+    --teks: #586032;
+    --teks2: #2c3114;
+}
+.savethedate {
+    width: 150px;
+    margin: auto;
+    padding: 10px 0;
+} 
+.hilang {
+    opacity: 0;
+}
+.hero {
+    background-image: url('../assets/1.webp');
+    background-attachment: fixed;
+    height: 650px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+} body {
+    background: var(--background1);
+    overflow-x: hidden;
+    font-family: n4;
+} 
+.intro-dashboard {font-size: 2rem;} 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color:var(--teks);
+} .green {
+    border: 10px double var(--teks2);
+    background-color: var(--teks);
+    color:white;
+} .green:hover {
+    border: 10px double var(--teks);
+    background-color: var(--teks2);
+    color:white;
+} 
+
+ 
+.assalamualaikum h3,
+.komentar h1 {
+    background: var(--teks2);
+    color:white;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 5px double var(--teks);
+} .card-box {
+    text-align: center;
+    background-color: var(--background2);
+    padding: 15px;
+    border: 10px double var(--teks2);
+} .assalamualaikum i {
+    color:var(--teks);
+} .mystatic {
+    position: static;
+} .leaf {
+    width: 120px;
+    position: absolute;
+    z-index: 999;
+} 
+
+/* Intro */
+.leaf:first-child {right: -30px;}
+.leaf:last-child  {transform: translate(150px,240px);}
+
+/* Assalamualaikum */
+.assalamualaikum .leaf:first-child  {right: -30px;}
+.assalamualaikum .leaf:nth-child(2) {transform: translate(20px,440px);}
+
+/* Galeri */
+.galeri .leaf:last-child  {transform: translate(10px, 400px);}
+
+/* Amplop */
+.amplop .leaf:last-child  {transform: translate(-100px, 400px);}
+
+.myabsolute {
+    width: 330px;
+    position: absolute;
+    transform: translate(-310px,-10px);
+} .mypaslon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.salams {
+    overflow: hidden;
+}
+.assalamualaikum i.loved {
+    -webkit-text-stroke: 5px var(--teks2);
+    font-size:5rem;
+    animation: lovedbright 1s ease 0s infinite alternate;
+} .quran {
+    background-color: var(--teks);
+    border: 10px double var(--teks2);
+} .quran p {
+    color: white;
+} .ayat {
+    font-weight: bold;
+    font-size: 1.3rem;
+} 
+
+.invite {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--background1);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease 0s;
+} .invite-title {
+    font-size: 3rem;
+} .buka {
+    transform: translateY(-200%);
+}
+
+.images-galery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.image-galery {
+    max-width: 350px;
+    border: 10px double var(--teks2);
+    transition: all 500ms ease 0s;
+}
+.hilang {
+    opacity: 0;
+}
+.image-galery.muncul {
+    opacity: 1;
+}
+.messages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.envelope-card {
+    background-color: var(--teks2);
+} .envelope-card p {
+    color:white;    
+}
+.message i {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 300px;
+    color: var(--teks);
+    -webkit-text-stroke: 10px var(--teks2);
+} .info {
+    text-align: center;
+    background-color: var(--background2);
+    font-size: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    color:var(--teks2)
+} .boxs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+} .box {
+    border-radius: 50px 50px 0 0;
+    flex:1;
+    padding: 10px;
+    background-color: var(--teks2);
+    color:white;
+} .box:hover {
+    background-color: var(--teks);
+}
+
+.box p {
+    color:white;
+} .mycards .card {
+    background-color:var(--background2);
+    border: 10px double var(--teks2);
+    
+} .users {
+    background-color:var(--background2);
+    width: 45px;
+    height: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 50px;
+} .comments {
+    border: 10px double var(--teks);
+    padding: 10px;
+    overflow: auto;
+    height:150px;
+} .footer {
+    background-color:var(--teks2);
+} .shopee {
+    text-decoration: none;
+    color:var(--background1);
+    transition: all 200ms ease 0s;
+} .shopee:hover {
+    color:white; 
+} .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    color:var(--color1);
+} 
+
+.mycards .card .card-body {
+    display: flex;
+    align-items:center;
+}
+@keyframes lovedbright {
+    to {
+        filter: brightness(2);
+    }
+} .times {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+} .waktu {
+    font-size: 2rem;
+} 
+.nav {
+    display: none;
+    position: fixed;
+    left: 30px;
+    right: 30px;
+    bottom: 20px;
+    z-index: 999999;
+    padding: 10px;
+    border-radius: 5px;    
+    border: 10px double var(--teks2);
+    background-color:var(--background2);
+} 
+.nav a {
+    transition: all 200ms ease 0s;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+}
+.nav a:hover {
+    color:var(--tombol)
+} .undangan {
+    font-size: 1.5rem;
+    color:var(--teks);
+}
+
+
+
+
+.open-leaf6 {
+    top: 0;
+}
+.open-leaf2 {
+    transform:translate(-100px, 300px);
+} .the-info {
+    justify-content: space-between;
+}
+
+@media screen and (max-width:750px) {
+    .mypaslon {
+        flex-direction: column;
+    } .assalamualaikum i {
+        margin: 20px 0;
+        font-size:3rem;
+    } .cardbox {
+        width: 100%;
+    } .comments {
+        margin-top: 50px;
+        height:300px;
+    } .menu {
+        flex-direction: column;
+    } 
+}
+
+@media screen and (max-width: 912px) {
+    .mycards .card .card-body {
+        flex-wrap: wrap;
+    }  .the-info {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero {
+        height: 250px;
+        
+    }
+}
+
+@media screen and (max-width: 683px) {
+    .leaf {
+        width: 90px;
+    } .intro .leaf:last-child  {transform: translate(20px,300px);}
+    .love-story hr {
+        display: block;
+    } .notes {
+        flex-direction: column;
+    } .note {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    .leaf {
+        width: 80px;
+    } 
+    .intro .leaf:last-child  {transform: translate(10px,370px);}
+    .intro .leaf:nth-child(2),
+    .assalamualaikum .leaf:nth-child(2) {
+        transform: translate(-30px,0);
+    } .open-leaf2 {
+        transform:translate(-30px, 300px);
+    }
+
+    .galeri .leaf:last-child {
+        transform: translate(-30px,900px);
+    }
+}
+
+
+.myicon {
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    color:var(--teks2);
+    top: 50%;
+    right: 0;
+    position:fixed;
+    background-color: var(--background2);
+    padding: 5px;
+    border-radius: 50px;
+    border: 10px double var(--teks2);
+    z-index: 99999999999;
+} .banner-side {
+    position: relative;
+    width:100vw;
+    z-index: -1;
+}
